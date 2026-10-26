@@ -1,1 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mercedes W212 — Галерея</title>
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #1a1a1a; color: #e0e0e0; margin: 0; padding: 20px; }
+        nav { background-color: #333; padding: 15px; border-radius: 5px; margin-bottom: 20px; }
+        nav a { color: silver; text-decoration: none; margin-right: 20px; font-weight: bold; }
+        nav a:hover { color: #fff; }
+        h1 { color: silver; border-bottom: 2px solid silver; padding-bottom: 10px; }
+        .content { max-width: 800px; margin: 0 auto; }
+        .gallery { display: flex; flex-wrap: wrap; gap: 15px; margin-top: 20px; }
+        .gallery img { width: 100%; max-width: 380px; border-radius: 8px; border: 2px solid #555; transition: transform 0.3s; }
+        .gallery img:hover { transform: scale(1.05); border-color: silver; }
+        button { background-color: silver; color: #1a1a1a; border: none; padding: 10px 20px; font-weight: bold; cursor: pointer; border-radius: 5px; margin-top: 20px; font-size: 16px; }
+        button:hover { background-color: #ccc; }
+    </style>
+</head>
+<body class="content">
+    <nav>
+        <a href="index.html">Главная</a>
+        <a href="world.html">Характеристики</a>
+        <a href="gallery.html">Галерея</a>
+    </nav>
+    
+    <h1>Галерея Mercedes-Benz W212</h1>
+    
+    <p>Здесь собраны фотографии этого прекрасного автомобиля. Наведи курсор на картинку, чтобы она немного увеличилась.</p>
 
+    <div class="gallery">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Mercedes-Benz_W212_Facelift_20090620.jpg/800px-Mercedes-Benz_W212_Facelift_20090620.jpg" alt="Mercedes W212 вид спереди">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Mercedes-Benz_E_350_CDI_BlueEFFICIENCY_Avantgarde_%28W_212%29_%E2%80%93_Heckansicht%2C_10._April_2011%2C_D%C3%BCsseldorf.jpg/800px-Mercedes-Benz_E_350_CDI_BlueEFFICIENCY_Avantgarde_%28W_212%29_%E2%80%93_Heckansicht%2C_10._April_2011%2C_D%C3%BCsseldorf.jpg" alt="Mercedes W212 вид сзади">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Mercedes-Benz_W212_Interior.jpg/800px-Mercedes-Benz_W212_Interior.jpg" alt="Салон Mercedes W212">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Mercedes-Benz_E_63_AMG_%28W_212%29_front.jpg/800px-Mercedes-Benz_E_63_AMG_%28W_212%29_front.jpg" alt="Mercedes W212 AMG">
+    </div>
+
+    <button id="scroll-btn">Наверх ↑</button>
+
+    <script>
+        const scrollBtn = document.getElementById('scroll-btn');
+        scrollBtn.onclick = function() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        };
+    </script>
+</body>
+</html>
