@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Сайт о моей любимой машине Mercedes-Benz W212">
+    <title>Mercedes W212 — Главная</title>
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #1a1a1a; color: #e0e0e0; margin: 0; padding: 20px; }
+        nav { background-color: #333; padding: 15px; border-radius: 5px; margin-bottom: 20px; }
+        nav a { color: silver; text-decoration: none; margin-right: 20px; font-weight: bold; }
+        nav a:hover { color: #fff; }
+        h1 { color: silver; border-bottom: 2px solid silver; padding-bottom: 10px; }
+        .content { max-width: 800px; margin: 0 auto; }
+        img { float: left; margin-right: 20px; margin-bottom: 10px; width: 300px; border-radius: 8px; }
+        button { background-color: silver; color: #1a1a1a; border: none; padding: 10px 20px; font-weight: bold; cursor: pointer; border-radius: 5px; margin-top: 20px; font-size: 16px; }
+        button:hover { background-color: #ccc; }
+    </style>
+</head>
+<body class="content">
+    <nav>
+        <a href="index.html">Главная</a>
+        <a href="world.html">Характеристики</a>
+        <a href="gallery.html">Галерея</a>
+    </nav>
+    
+    <h1>Mercedes-Benz W212</h1>
+    
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Mercedes-Benz_W212_Facelift_20090620.jpg/800px-Mercedes-Benz_W212_Facelift_20090620.jpg" alt="Mercedes-Benz W212">
+    
+    <p>Добро пожаловать на мой сайт, посвященный легендарному автомобилю — <strong>Mercedes-Benz E-класса в кузове W212</strong>. Это автомобиль, который сочетает в себе немецкое качество, комфорт и солидный внешний вид.</p>
+    
+    <p>W212 выпускался с 2009 по 2016 год. Он известен своими угловатыми формами, которые со временем стали классикой дизайна. Владельцы ценят его за надежность и плавность хода.</p>
+
+    <h3>Почему я выбрал этот автомобиль:</h3>
+    <ul>
+        <li>Солидный и строгий внешний вид</li>
+        <li>Высокий уровень комфорта и шумоизоляции</li>
+        <li>Надежные двигатели (особенно дизельные версии)</li>
+    </ul>
+
+    <button id="bg-btn">Сменить тему на светлую</button>
+
+    <script>
+        const btn = document.getElementById('bg-btn');
+        let isDark = true;
+        btn.onclick = function() {
+            if (isDark) {
+                document.body.style.backgroundColor = '#f4f4f4';
+                document.body.style.color = '#333';
+                btn.textContent = 'Сменить тему на темную';
+                isDark = false;
+            } else {
+                document.body.style.backgroundColor = '#1a1a1a';
+                document.body.style.color = '#e0e0e0';
+                btn.textContent = 'Сменить тему на светлую';
+                isDark = true;
+            }
+        };
+    </script>
+</body>
+</html>
